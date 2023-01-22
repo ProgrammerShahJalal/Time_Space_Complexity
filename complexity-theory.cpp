@@ -8,24 +8,25 @@ int main()
     ==> Judge time and space
     ==>  */
 
-    int n, sum = 0; // O(1)
-    cin >> n;       // O(1)
+    int n, sum = 0; // T==> O(1) S==> O(1)
+    cin >> n;       // T==> O(1)
 
-    // vector<int>a; O(1)
-    vector<int> a(n); // O(n)
+    // vector<int>a; T==> O(1)
+    vector<int> a(n); // T==> O(n) S==> O(n)
 
-    for (int i = 0; i < n; i++) //O(n)
+    for (int i = 0; i < n; i++) // T==> O(n)
     {
         cin >> a[i];
     }
 
-    for (int i = 0; i < n; i++) //O(n)
+    for (int i = 0; i < n; i++) // T==> O(n)
     {
         sum += a[i];
     }
 
-    cout << sum << endl; //O(1)
+    cout << sum << endl; // T==> O(1)
 
     // Total Time Complexity = O(1) + O(1) + O(n) + O(n) + O(n)+ O(1) = O(n)
+    // Total Space Complexity = O(1) + O(n) = O(n)
     return 0;
 }
