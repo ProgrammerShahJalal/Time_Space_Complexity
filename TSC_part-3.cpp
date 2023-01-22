@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    // Time = O(√(n))
-    // Space = O(1)
+    // Time Complexity = O(√(n))
+    // Space Complexity = O(1)
     int n;
     cin>>n;
     for(int i=0; i*i<=n; i++){
